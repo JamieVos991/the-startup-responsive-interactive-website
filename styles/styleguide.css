@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 1.6rem;
+  --font-size-h4: 1.4rem;
+  --font-size-h5: 1.2rem;
+  --font-size-h6: 1rem;
+
+  --font-size-p: 1rem;
+
+  --font-family-gillsans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+body {
+  font-family: var(--font-family-gillsans);
+  min-height: 100dvh;
+}
+
+p {
+  font-size: var(--font-size-p);
+}
+
+.font-h1 {
+  font-size: var(--font-size-h1);
+}
+
+.font-h2 {
+  font-size: var(--font-size-h2);
+}
+
+.font-h3 {
+  font-size: var(--font-size-h3);
+}
+
+.font-h4 {
+  font-size: var(--font-size-h4);
+}
+
+.font-h5 {
+  font-size: var(--font-size-h5);
+}
+
+.font-h6 {
+  font-size: var(--font-size-h6);
+}
