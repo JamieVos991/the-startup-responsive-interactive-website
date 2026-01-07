@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  article {
+    max-width: 60rem;
+    background: var(--primaire-kleur);
+    display: grid;
+    grid-template-areas:
+      "player player player actions actions"
+      "player player player actions actions"
+      "controller controller podcast podcast podcast"
+      "controller controller podcast podcast podcast"
+      "controller controller podcast podcast podcast";
+    width: 90%;
+    height: 30rem;
+    box-shadow: black 20px 20px;
+
+    ul {
+      border: 0.6px solid black;
+      padding: 1.5rem;
+
+      &:nth-of-type(1) {
+        grid-area: player;
+      }
+      &:nth-of-type(2) {
+        grid-area: actions;
+      }
+      &:nth-of-type(3) {
+        grid-area: controller;
+      }
+      &:nth-of-type(4) {
+        grid-area: podcast;
+      }
+    }
+  }
+}
