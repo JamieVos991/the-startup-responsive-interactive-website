@@ -22,8 +22,11 @@ main {
       justify-content: center;
       gap: 0.8rem;
 
-      h2 {
+      p {
         position: relative;
+        font-size: 2rem;
+        font-family: var(--font-family-satoshi);
+        font-weight: bold;
         max-width: max-content;
 
         &::after {
@@ -44,8 +47,14 @@ main {
       flex-direction: column;
       align-items: flex-end;
 
-      p {
+      p:first-of-type {
         color: var(--tertiare-kleur);
+      }
+
+      p:last-of-type {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: var(--font-family-satoshi);
       }
     }
 
@@ -62,7 +71,7 @@ main {
 
         background-color: var(--tertiare-kleur);
         color: white;
-        border-radius: 1rem;
+        border-radius: var(--standaard-border-radius);
 
         li {
           &:first-of-type {

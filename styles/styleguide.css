@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: local("Satoshi"), url("../assets/Satoshi.otf") format("opentype"),
-    url("../assets/Satoshi.woff") format("woff");
+  src: local("Satoshi"),
+    url("../assets/Satoshi/OTF/Satoshi-bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -21,6 +21,8 @@
   --tertiare-kleur: #6003ff;
   --accent-kleur-a: hsl(218, 70%, 29%);
   --accent-kleur-b: hsl(218, 70%, 19%);
+
+  --standaard-border-radius: 1rem;
 
   --font-size-h1: 2rem;
   --font-size-h2: 2rem;
@@ -75,8 +77,12 @@ p {
   font-size: var(--font-size-h6);
 }
 
-li {
+ul {
   list-style: none;
+
+  li {
+    list-style: none;
+  }
 }
 
 a {
