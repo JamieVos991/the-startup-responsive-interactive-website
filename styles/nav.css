@@ -1,8 +1,45 @@
-ul {
-  display: none;
-}
+nav {
+  #hamburgerKnop {
+    background: none;
+    margin-top: 0.5rem;
+    border: none;
+    cursor: pointer;
 
-.show {
-  display: block;
-  position: absolute;
+    &::after {
+      content: url(../assets/Svg/hamburger.svg);
+    }
+  }
+
+  ul {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.7);
+    left: 100px;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+
+    #hamburgerCloseKnop {
+      &::after {
+        width: 50px;
+        height: 60px;
+        display: inline-block;
+        top: 1rem;
+        right: 1rem;
+
+        background-color: white;
+        rotate: 45deg;
+        mask: url("../assets/Svg/hamburgerclose.svg") no-repeat center / contain;
+        -webkit-mask: url("../assets/Svg/hamburgerclose.svg") no-repeat center /
+          contain;
+      }
+    }
+  }
 }
