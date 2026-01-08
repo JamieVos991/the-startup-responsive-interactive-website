@@ -31,13 +31,29 @@ main {
     }
   }
 
-  section {
-    &:nth-of-type(1) {
-      height: 35%;
-      display: grid;
-      place-content: center;
-      text-align: center;
+  #infoSection {
+    min-height: 35%;
 
+    p {
+      font-family: var(--font-family-satoshi);
+      font-size: 2rem;
+
+      span {
+        color: var(--tertiare-kleur);
+      }
+    }
+  }
+
+  #fmSection.actief {
+    min-height: 35%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+  section {
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
       h1 {
         font-size: 5rem;
         span {
@@ -46,15 +62,15 @@ main {
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(3) {
       height: 40%;
       display: grid;
       place-content: center;
-    }
-
-    &:nth-of-type(3) {
-      height: 15%;
       background-color: green;
+    }
+    &:nth-of-type(4) {
+      height: 15%;
+      background-color: yellow;
     }
   }
 }
