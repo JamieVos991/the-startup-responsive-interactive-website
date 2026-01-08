@@ -6,17 +6,25 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi"), url("../assets/Satoshi.otf") format("opentype"),
+    url("../assets/Satoshi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
-  --primaire-kleur: #ffd0d0;
-  --secundaire-kleur: #e1acac;
-  --tertiare-kleur: #ca8787;
-  --accent-kleur: #a87676;
+  --primaire-kleur: hsl(0, 0%, 0%);
+  --secundaire-kleur: hsl(0, 0%, 100%);
+  --tertiare-kleur: hsl(0deg 6.12% 69.17%);
+  --accent-kleur-a: hsl(0, 94%, 67%);
+  --accent-kleur-b: hsl(218, 70%, 19%);
 
   --font-size-h1: 2rem;
-  --font-size-h2: 1.1rem;
-  --font-size-h3: 1.6rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 2rem;
   --font-size-h4: 1.4rem;
   --font-size-h5: 1.2rem;
   --font-size-h6: 1rem;
@@ -25,7 +33,8 @@
 
   --font-family-gillsans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  --font-family-bebas: "Bebas Neue", sans-serif;
+  --font-family-satoshi: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
 }
 
 body {
@@ -40,15 +49,18 @@ p {
 
 .font-h1 {
   font-size: var(--font-size-h1);
+  font-family: var(--font-family-satoshi);
+  font-weight: 600;
 }
 
 .font-h2 {
   font-size: var(--font-size-h2);
-  font-family: var(--font-family-bebas);
+  font-family: var(--font-family-satoshi);
 }
 
 .font-h3 {
   font-size: var(--font-size-h3);
+  font-family: var(--font-family-satoshi);
 }
 
 .font-h4 {
@@ -61,4 +73,13 @@ p {
 
 .font-h6 {
   font-size: var(--font-size-h6);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
