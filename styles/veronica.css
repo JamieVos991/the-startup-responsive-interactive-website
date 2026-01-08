@@ -37,6 +37,7 @@ main {
     p {
       font-family: var(--font-family-satoshi);
       font-size: 2rem;
+      font-weight: bold;
 
       span {
         color: var(--tertiare-kleur);
