@@ -1,38 +1,111 @@
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  padding: 1rem;
 
-  article {
-    max-width: 60rem;
-    background: var(--primaire-kleur);
-    display: grid;
-    grid-template-areas:
-      "player player player actions actions"
-      "player player player actions actions"
-      "controller controller podcast podcast podcast"
-      "controller controller podcast podcast podcast"
-      "controller controller podcast podcast podcast";
-    width: 90%;
-    height: 30rem;
-    box-shadow: black 20px 20px;
+  header {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 
-    ul {
-      border: 0.6px solid black;
-      padding: 1.5rem;
+    h1 {
+      &::after {
+        content: " radio zender";
+        color: var(--tertiare-kleur);
+      }
+    }
 
-      &:nth-of-type(1) {
-        grid-area: player;
+    button {
+      background: none;
+      margin-top: 0.5rem;
+      border: none;
+      cursor: pointer;
+
+      &::after {
+        content: url(../assets/Svg/hamburger.svg);
       }
-      &:nth-of-type(2) {
-        grid-area: actions;
+    }
+  }
+  section {
+    &:nth-of-type(1) {
+      height: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8rem;
+
+      h2 {
+        position: relative;
+        max-width: max-content;
+
+        &::after {
+          content: "(20)";
+          color: var(--tertiare-kleur);
+          font-size: 0.7rem;
+          position: absolute;
+          right: -25px;
+          top: -5px;
+        }
       }
-      &:nth-of-type(3) {
-        grid-area: controller;
+    }
+
+    &:nth-of-type(2) {
+      height: 15%;
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+
+      p {
+        color: var(--tertiare-kleur);
       }
-      &:nth-of-type(4) {
-        grid-area: podcast;
+    }
+
+    &:nth-of-type(3) {
+      height: 35%;
+
+      ul {
+        height: 100%;
+        background-color: var(--tertiare-kleur);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 30rem;
+        border-radius: 1rem;
+
+        li {
+          padding: 1rem;
+
+          h2 {
+            display: flex;
+            justify-content: space-between;
+
+            &::after {
+              content: url(../assets/Svg/arrow-right.svg);
+            }
+          }
+        }
+
+        div {
+          height: 12rem;
+          display: flex;
+
+          li {
+            height: 100%;
+            width: 50%;
+
+            &:nth-of-type(1) {
+              background-color: var(--accent-kleur-a);
+              border-top-right-radius: 3rem;
+              border-bottom-left-radius: 1rem;
+            }
+
+            &:nth-of-type(2) {
+              background-color: var(--accent-kleur-b);
+              border-top-left-radius: 3rem;
+              border-bottom-right-radius: 1rem;
+            }
+          }
+        }
       }
     }
   }
