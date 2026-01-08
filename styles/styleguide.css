@@ -18,8 +18,8 @@
 :root {
   --primaire-kleur: hsl(0, 0%, 0%);
   --secundaire-kleur: hsl(0, 0%, 100%);
-  --tertiare-kleur: hsl(0deg 6.12% 69.17%);
-  --accent-kleur-a: hsl(0, 94%, 67%);
+  --tertiare-kleur: #6003ff;
+  --accent-kleur-a: hsl(218, 70%, 29%);
   --accent-kleur-b: hsl(218, 70%, 19%);
 
   --font-size-h1: 2rem;

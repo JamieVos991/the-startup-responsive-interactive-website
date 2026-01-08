@@ -8,26 +8,14 @@ main {
     justify-content: space-between;
     gap: 2rem;
 
-    h1 {
-      &::after {
-        content: " radio zender";
-        color: var(--tertiare-kleur);
-      }
-    }
-
-    button {
-      background: none;
-      margin-top: 0.5rem;
-      border: none;
-      cursor: pointer;
-
-      &::after {
-        content: url(../assets/Svg/hamburger.svg);
-      }
+    h1::after {
+      content: " radio zender";
+      color: var(--tertiare-kleur);
     }
   }
+
   section {
-    &:nth-of-type(1) {
+    &:first-of-type {
       height: 35%;
       display: flex;
       flex-direction: column;
@@ -40,11 +28,12 @@ main {
 
         &::after {
           content: "(20)";
-          color: var(--tertiare-kleur);
-          font-size: 0.7rem;
           position: absolute;
-          right: -25px;
           top: -5px;
+          right: -25px;
+
+          font-size: 0.7rem;
+          color: var(--tertiare-kleur);
         }
       }
     }
@@ -52,8 +41,8 @@ main {
     &:nth-of-type(2) {
       height: 15%;
       display: flex;
-      align-items: end;
       flex-direction: column;
+      align-items: flex-end;
 
       p {
         color: var(--tertiare-kleur);
@@ -65,45 +54,56 @@ main {
 
       ul {
         height: 100%;
-        background-color: var(--tertiare-kleur);
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
         max-width: 30rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        background-color: var(--tertiare-kleur);
+        color: white;
         border-radius: 1rem;
 
         li {
-          padding: 1rem;
+          &:first-of-type {
+            grid-column: 1 / -1;
+            grid-row: 1;
 
-          h2 {
-            display: flex;
-            justify-content: space-between;
+            h2 {
+              padding: 1rem;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
 
-            &::after {
-              content: url(../assets/Svg/arrow-right.svg);
+              &::after {
+                content: "";
+                display: block;
+                height: 30px;
+                aspect-ratio: 1/1;
+
+                background-color: white;
+                mask: url("../assets/Svg/arrow-right.svg") no-repeat center /
+                  contain;
+                -webkit-mask: url("../assets/Svg/arrow-right.svg") no-repeat
+                  center / contain;
+              }
             }
           }
-        }
 
-        div {
-          height: 12rem;
-          display: flex;
+          &:nth-of-type(2) {
+            background-color: var(--accent-kleur-a);
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 1rem;
+            grid-column: 1;
+            grid-row: 2 / 4;
+          }
 
-          li {
-            height: 100%;
-            width: 50%;
-
-            &:nth-of-type(1) {
-              background-color: var(--accent-kleur-a);
-              border-top-right-radius: 3rem;
-              border-bottom-left-radius: 1rem;
-            }
-
-            &:nth-of-type(2) {
-              background-color: var(--accent-kleur-b);
-              border-top-left-radius: 3rem;
-              border-bottom-right-radius: 1rem;
-            }
+          &:last-of-type {
+            background-color: var(--accent-kleur-b);
+            border-top-left-radius: 3rem;
+            border-bottom-right-radius: 1rem;
+            grid-column: 2;
+            grid-row: 2 / 4;
           }
         }
       }
