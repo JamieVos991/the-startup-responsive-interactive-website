@@ -20,13 +20,10 @@ main {
 
         label {
           background-color: var(--tertiare-kleur);
-          color: white;
-          padding: 0.5rem 1rem;
+          color: var(--secundairy-kleur);
           border-radius: var(--standaard-border-radius);
+          padding: 0.5rem 1rem;
         }
-      }
-
-      button {
       }
     }
   }
@@ -36,8 +33,9 @@ main {
 
     p {
       font-family: var(--font-family-satoshi);
-      font-size: 2rem;
+      font-size: var(--font-size-p-large);
       font-weight: bold;
+      padding: 0 0 1rem 0;
 
       span {
         color: var(--tertiare-kleur);

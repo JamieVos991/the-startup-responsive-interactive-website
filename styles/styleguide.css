@@ -17,8 +17,8 @@
 
 :root {
   --primaire-kleur: hsl(0, 0%, 0%);
-  --secundaire-kleur: hsl(0, 0%, 100%);
-  --tertiare-kleur: #6003ff;
+  --secundairy-kleur: hsl(0, 0%, 100%);
+  --tertiare-kleur: hsl(262, 100%, 51%);
   --accent-kleur-a: hsl(218, 70%, 29%);
   --accent-kleur-b: hsl(218, 70%, 19%);
 
@@ -31,7 +31,11 @@
   --font-size-h5: 1.2rem;
   --font-size-h6: 1rem;
 
-  --font-size-p: 1rem;
+  --font-size-p-xlarge: 3rem;
+  --font-size-p-large: 2rem;
+  --font-size-p-medium: 1.5rem;
+  --font-size-p-normal: 1rem;
+  --font-size-p-small: 0.7rem;
 
   --font-family-gillsans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
@@ -41,18 +45,18 @@
 
 body {
   font-family: var(--font-family-gillsans);
-  min-height: 100dvh;
   background-color: var(--secundaire-kleur);
+  min-height: 100dvh;
 }
 
 p {
-  font-size: var(--font-size-p);
+  font-size: var(--font-size-p-normal);
 }
 
 .font-h1 {
   font-size: var(--font-size-h1);
   font-family: var(--font-family-satoshi);
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .font-h2 {

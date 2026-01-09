@@ -24,7 +24,7 @@ main {
 
       p {
         position: relative;
-        font-size: 2rem;
+        font-size: var(--font-size-p-large);
         font-family: var(--font-family-satoshi);
         font-weight: bold;
         max-width: max-content;
@@ -35,7 +35,7 @@ main {
           top: -5px;
           right: -25px;
 
-          font-size: 0.7rem;
+          font-size: var(--font-size-p-small);
           color: var(--tertiare-kleur);
         }
       }
@@ -52,9 +52,9 @@ main {
       }
 
       p:last-of-type {
-        font-size: 3rem;
-        font-weight: bold;
+        font-size: var(--font-size-p-xlarge);
         font-family: var(--font-family-satoshi);
+        font-weight: bold;
       }
     }
 
@@ -70,7 +70,7 @@ main {
         grid-template-rows: 1fr 1fr 1fr;
 
         background-color: var(--tertiare-kleur);
-        color: white;
+        color: var(--secundairy-kleur);
         border-radius: var(--standaard-border-radius);
 
         li {
@@ -90,7 +90,7 @@ main {
                 height: 30px;
                 aspect-ratio: 1/1;
 
-                background-color: white;
+                background-color: var(--secundairy-kleur);
                 mask: url("../assets/Svg/arrow-right.svg") no-repeat center /
                   contain;
                 -webkit-mask: url("../assets/Svg/arrow-right.svg") no-repeat
