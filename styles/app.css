@@ -10,7 +10,7 @@ main {
 
     h1::after {
       content: " radio zender";
-      color: var(--tertiare-kleur);
+      color: var(--tertiaire-kleur);
     }
   }
 
@@ -24,7 +24,7 @@ main {
 
       p {
         position: relative;
-        font-size: var(--font-size-p-large);
+        font-size: var(--font-grootte-p-l);
         font-family: var(--font-family-satoshi);
         font-weight: bold;
         max-width: max-content;
@@ -35,8 +35,8 @@ main {
           top: -5px;
           right: -25px;
 
-          font-size: var(--font-size-p-small);
-          color: var(--tertiare-kleur);
+          font-size: var(--font-grootte-p-s);
+          color: var(--tertiaire-kleur);
         }
       }
     }
@@ -48,11 +48,11 @@ main {
       align-items: flex-end;
 
       p:first-of-type {
-        color: var(--tertiare-kleur);
+        color: var(--tertiaire-kleur);
       }
 
       p:last-of-type {
-        font-size: var(--font-size-p-xlarge);
+        font-size: var(--font-grootte-p-xl);
         font-family: var(--font-family-satoshi);
         font-weight: bold;
       }
@@ -69,8 +69,8 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
 
-        background-color: var(--tertiare-kleur);
-        color: var(--secundairy-kleur);
+        background-color: var(--tertiaire-kleur);
+        color: var(--secundaire-kleur);
         border-radius: var(--standaard-border-radius);
 
         li {
@@ -90,7 +90,7 @@ main {
                 height: 30px;
                 aspect-ratio: 1/1;
 
-                background-color: var(--secundairy-kleur);
+                background-color: var(--secundaire-kleur);
                 mask: url("../assets/Svg/arrow-right.svg") no-repeat center /
                   contain;
                 -webkit-mask: url("../assets/Svg/arrow-right.svg") no-repeat
@@ -100,7 +100,7 @@ main {
           }
 
           &:nth-of-type(2) {
-            background-color: var(--accent-kleur-a);
+            background-color: var(--primaire-accent-kleur);
             border-top-right-radius: 3rem;
             border-bottom-left-radius: 1rem;
             grid-column: 1;
@@ -108,7 +108,7 @@ main {
           }
 
           &:last-of-type {
-            background-color: var(--accent-kleur-b);
+            background-color: var(--secundaire-accent-kleur);
             border-top-left-radius: 3rem;
             border-bottom-right-radius: 1rem;
             grid-column: 2;

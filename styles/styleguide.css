@@ -50,35 +50,35 @@ body {
 }
 
 p {
-  font-size: var(--font-grootte-p-normal);
+  font-size: var(--font-grootte-p-normaal);
 }
 
 .font-h1 {
-  font-size: var(--font-size-h1);
+  font-size: var(--font-grootte-h1);
   font-family: var(--font-family-satoshi);
   font-weight: bold;
 }
 
 .font-h2 {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-grootte-h2);
   font-family: var(--font-family-satoshi);
 }
 
 .font-h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-grootte-h3);
   font-family: var(--font-family-satoshi);
 }
 
 .font-h4 {
-  font-size: var(--font-size-h4);
+  font-size: var(--font-grootte-h4);
 }
 
 .font-h5 {
-  font-size: var(--font-size-h5);
+  font-size: var(--font-grootte-h5);
 }
 
 .font-h6 {
-  font-size: var(--font-size-h6);
+  font-size: var(--font-grootte-h6);
 }
 
 ul {
