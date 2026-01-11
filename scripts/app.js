@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     // Elementen defineren
     const hamburgerKnop = document.querySelector("#hamburgerKnop");
     const hamburgerSluitKnop = document.querySelector("#hamburgerSluitKnop");
@@ -14,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburgerSluitKnop?.addEventListener("click", () => {
       hamburgerMenu.classList.remove("show");
     });
+    
 
      // Elementen defineren
     const toggle = document.getElementById("sliderKnop");
@@ -35,5 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
       infoSection.classList.toggle("actief", !isFM);
       fmSection.classList.toggle("actief", isFM);
     });
-  });
-  
+  }); 
