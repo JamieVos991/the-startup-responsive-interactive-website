@@ -1,42 +1,52 @@
-main {
-  height: 100vh;
+body {
   padding: 1rem;
+  height: 100dvh;
+}
 
-  header {
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+header {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
 
-    h1::after {
-      content: " radio zender";
-      color: var(--tertiaire-kleur);
-    }
+  nav {
+    margin-left: 1rem;
   }
+
+  h1::after {
+    color: var(--tertiaire-kleur);
+    content: " radio zender";
+  }
+}
+
+main {
+  height: 90%;
 
   section {
     &:first-of-type {
-      height: 35%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.8rem;
+      height: 50%;
+      display: grid;
+      align-items: center;
+
+      ul {
+        display: grid;
+        gap: 1rem;
+      }
 
       p {
-        position: relative;
         font-size: var(--font-grootte-p-l);
         font-family: var(--font-family-satoshi);
-        font-weight: bold;
+
         max-width: max-content;
+        position: relative;
 
         &::after {
+          font-size: var(--font-grootte-p-s);
+          color: var(--tertiaire-kleur);
+
           content: "(20)";
           position: absolute;
           top: -5px;
           right: -25px;
-
-          font-size: var(--font-grootte-p-s);
-          color: var(--tertiaire-kleur);
         }
       }
     }
@@ -54,6 +64,7 @@ main {
       p:last-of-type {
         font-size: var(--font-grootte-p-xl);
         font-family: var(--font-family-satoshi);
+
         font-weight: bold;
       }
     }
@@ -61,19 +72,18 @@ main {
     &:nth-of-type(3) {
       height: 35%;
 
-      ul {
-        height: 100%;
-        max-width: 30rem;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-
+      article {
         background-color: var(--tertiaire-kleur);
         color: var(--secundaire-kleur);
         border-radius: var(--standaard-border-radius);
 
-        li {
+        height: 100%;
+        max-width: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        div {
           &:first-of-type {
             grid-column: 1 / -1;
             grid-row: 1;

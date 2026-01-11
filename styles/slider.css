@@ -1,7 +1,7 @@
 .slider-knop {
-  font-size: var(--font-size-p-small);
-  color: var(--secundairy-kleur);
-  background: var(--accent-kleur-b);
+  font-size: var(--font-grootte-p-s);
+  color: var(--secundaire-kleur);
+  background: var(--secundaire-accent-kleur);
   position: relative;
   width: 88px;
   height: 40px;
@@ -32,7 +32,7 @@
     left: 2px;
     width: 42px;
     height: 36px;
-    background: var(--tertiare-kleur);
+    background: var(--tertiaire-kleur);
     border-radius: 999px;
     transition: transform 0.25s ease;
     z-index: 1;

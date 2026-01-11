@@ -16,8 +16,9 @@ nav {
 
     li {
       p {
-        font-size: var(--font-size-p-large);
+        font-size: var(--font-grootte-p-l);
         font-family: var(--font-family-satoshi);
+
         font-weight: 600;
       }
 
@@ -31,6 +32,8 @@ nav {
   }
 
   .show {
+    color: var(--secundaire-kleur);
+
     position: absolute;
     top: 0;
     right: 0;
@@ -44,17 +47,17 @@ nav {
     padding: 1rem;
 
     background-color: rgb(0 0 0 / 0.9);
-    color: var(--secundairy-kleur);
     z-index: 1;
 
     #hamburgerSluitKnop {
+      background-color: var(--secundaire-kleur);
+
       width: 40px;
       height: 40px;
 
       position: absolute;
       right: -5px;
       bottom: -10px;
-      background-color: var(--secundairy-kleur);
       rotate: 45deg;
 
       mask: url("../assets/Svg/hamburgerclose.svg") no-repeat center / contain;
