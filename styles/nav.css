@@ -16,7 +16,7 @@ nav {
 
     li {
       p {
-        font-size: var(--font-grootte-p-l);
+        font-size: var(--font-grootte-l);
         font-family: var(--font-family-satoshi);
 
         font-weight: 600;

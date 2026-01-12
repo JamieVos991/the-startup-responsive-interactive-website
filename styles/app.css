@@ -33,14 +33,14 @@ main {
       }
 
       p {
-        font-size: var(--font-grootte-p-l);
+        font-size: var(--font-grootte-l);
         font-family: var(--font-family-satoshi);
 
         max-width: max-content;
         position: relative;
 
         &::after {
-          font-size: var(--font-grootte-p-s);
+          font-size: var(--font-grootte-xs);
           color: var(--tertiaire-kleur);
 
           content: "(20)";
@@ -62,7 +62,7 @@ main {
       }
 
       p:last-of-type {
-        font-size: var(--font-grootte-p-xl);
+        font-size: var(--font-grootte-xl);
         font-family: var(--font-family-satoshi);
 
         font-weight: bold;
