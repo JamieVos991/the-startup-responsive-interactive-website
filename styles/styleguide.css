@@ -30,6 +30,9 @@
   --font-grootte-s: 1rem;
   --font-grootte-xs: 0.7rem;
 
+  --font-weight-bold: bold;
+  --font-weight-600: 600;
+
   --font-family-gillsans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   --font-family-satoshi: "Satoshi", system-ui, -apple-system, BlinkMacSystemFont,
@@ -49,7 +52,7 @@ p {
 .font-h1 {
   font-size: var(--font-grootte-l);
   font-family: var(--font-family-satoshi);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .font-h2 {

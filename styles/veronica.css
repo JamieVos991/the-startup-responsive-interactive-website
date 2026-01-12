@@ -34,7 +34,8 @@ main {
     p {
       font-family: var(--font-family-satoshi);
       font-size: var(--font-grootte-l);
-      font-weight: bold;
+      font-weight: var(--font-weight-bold);
+
       padding: 0 0 1rem 0;
 
       span {
