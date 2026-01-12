@@ -1,13 +1,6 @@
 nav {
   #hamburgerKnop {
-    background: none;
-    border: none;
     margin-top: 0.5rem;
-    cursor: pointer;
-
-    &::after {
-      content: url("../assets/Svg/hamburger.svg");
-    }
   }
 
   ul {
@@ -51,13 +44,13 @@ nav {
     #hamburgerSluitKnop {
       background-color: var(--secundaire-kleur);
 
-      width: 40px;
-      height: 40px;
-
       position: absolute;
       right: -5px;
       bottom: -10px;
       rotate: 45deg;
+
+      width: 40px;
+      aspect-ratio: 1;
 
       mask: url("../assets/Svg/hamburgerclose.svg") no-repeat center / contain;
       -webkit-mask: url("../assets/Svg/hamburgerclose.svg") no-repeat center /

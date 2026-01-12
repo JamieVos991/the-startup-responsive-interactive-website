@@ -32,7 +32,7 @@ main {
         gap: 1rem;
       }
 
-      p {
+      a {
         font-size: var(--font-grootte-l);
         font-family: var(--font-family-satoshi);
 
@@ -64,7 +64,6 @@ main {
       p:last-of-type {
         font-size: var(--font-grootte-xl);
         font-family: var(--font-family-satoshi);
-
         font-weight: var(--font-weight-bold);
       }
     }
