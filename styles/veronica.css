@@ -28,6 +28,11 @@ main {
     }
   }
 
+  #infoSection,
+  #fmSection {
+    display: none;
+  }
+
   #infoSection {
     min-height: 35%;
 
@@ -42,6 +47,10 @@ main {
         color: var(--tertiaire-kleur);
       }
     }
+  }
+
+  #infoSection.actief {
+    display: block;
   }
 
   #fmSection.actief {

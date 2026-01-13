@@ -55,7 +55,8 @@ a {
 
   &:active,
   &:focus {
-    outline: 2px solid var(--tertiaire-kleur);
+    border: none;
+    outline: 2px solid var(--tertiaire-kleur) !important;
   }
 }
 
