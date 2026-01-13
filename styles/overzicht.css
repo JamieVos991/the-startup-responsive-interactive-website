@@ -1,0 +1,18 @@
+main {
+  padding: 1rem;
+
+  time {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    justify-items: center;
+    width: 4rem;
+    height: 8rem;
+    padding-bottom: 1rem;
+    aspect-ratio: 1;
+
+    &::after {
+      content: "";
+      border-right: dashed 2px var(--tertiaire-kleur);
+    }
+  }
+}
